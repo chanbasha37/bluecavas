@@ -122,7 +122,6 @@
         <members>SiteRegisterController</members>
         <members>SiteRegisterControllerTest</members>
         <members>TestController</members>
-        <members>TestLightningConnectQuickstart</members>
         <members>UnlockRecordDuringApprovalCon</members>
         <members>Vision</members>
         <members>VisionController</members>
