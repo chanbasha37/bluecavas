@@ -1,0 +1,48 @@
+# gitignore for Salesforce Projects
+# Based on https://github.com/mailtoharshit/gitignore
+
+# Project Settings and Metadata
+.project
+.settings/
+.metadata
+build.properties
+config
+
+# Apex Log as optional
+apex-scripts/log
+
+# Eclipse specific
+salesforce.schema
+Referenced Packages
+bin/
+tmp/
+config/
+*.tmp
+*.bak
+local.properties
+.settings
+.loadpath
+.classpath
+*.cache
+
+# Mavensmate
+*.sublime-project
+*.sublime-settings
+*.sublime-workspace
+mm.log
+
+# Haoide SublimeText
+.config
+.deploy
+.history
+
+# macOS specific exclusions
+.DS_Store
+
+# The Welkin Suite specific
+**/.localHistory
+
+# Others
+*.sfuo
+TestCache.xml
+TestsResultsCache.xml

@@ -1,0 +1,9 @@
+# Git LFS (Large File Storage) is used for binary files.
+# https://www.atlassian.com/git/tutorials/git-lfs
+
+src/contentassets/*.asset filter=lfs diff=lfs merge=lfs -text
+src/documents/*/* filter=lfs diff=lfs merge=lfs -text
+src/documents/*/*-meta.xml !filter !diff !merge !text
+src/documents/*/*.URL !filter !diff !merge !text
+src/siteDotComSites/*.site filter=lfs diff=lfs merge=lfs -text
+src/staticresources/*.resource filter=lfs diff=lfs merge=lfs -text

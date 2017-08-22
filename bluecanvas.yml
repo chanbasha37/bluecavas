@@ -1,0 +1,6 @@
+# Blue Canvas provides Git source control for Salesforce projects. This
+# configuration file lets you customize the behavior of the service.
+# https://bluecanvas.io
+
+package:
+  directory: ./src
