@@ -1,0 +1,38 @@
+<apex:page controller="SNowFieldsController">
+<apex:form >
+
+    <apex:pageBlock title="Select IncidentFields ">
+      <apex:inputField value="{!incident.Incident_Fields__c}" /><br />        
+      <apex:commandButton value="Save" action="{!Submit}" />          
+    </apex:pageBlock>
+    
+    <apex:commandButton value="Choose Mapping Fields" action="{!Next}" />          
+     
+     
+  
+      <table>
+            <tr>
+            <td>
+                  <apex:pageBlock title=" IncidentFields "><br/>        
+                  <apex:repeat value="{!incidentFields}" var="key">            
+                  <apex:outputText value="{!key}"/> <br/>
+                  </apex:repeat>
+                  </apex:pageBlock>     
+            </td>   
+            
+            
+            <td>
+                  <apex:pageBlock title=" CaseFields "><br/>        
+                  <apex:repeat value="{!caseFields}" var="key">            
+                  <apex:outputText value="{!key}"/> <br/>
+                  </apex:repeat>
+                  </apex:pageBlock>     
+            </td>       
+            
+                          
+            </tr>
+      </table>
+     
+        
+</apex:form>
+</apex:page>

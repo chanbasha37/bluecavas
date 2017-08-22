@@ -1,0 +1,28 @@
+<apex:page sidebar="false" controller="JiraFieldsController"> 
+ <apex:form >
+     <div style="border:1px solid; width:200px;">
+    <div style="height:30px;width:300px;margin-top:20px;margin-left:20px;
+
+                     font-size:15px;color:blue;">
+            Jira Issue Fields Mapping
+         </div>
+         
+         <apex:pageBlock title="All Selected Fields : "><br/>
+         
+           <apex:repeat value="{!fields}" var="key">            
+                <apex:outputText value="{!key}"/> <br/>
+           </apex:repeat>
+
+         </apex:pageBlock> 
+
+      <table>
+         <tr >
+             <td colspan="2" align="center">
+                 <apex:commandButton value="Save Mapping" style="color:red;" action="{!doInsert}" />
+             </td>
+         </tr>
+     </table>
+     </div>
+</apex:form>
+
+</apex:page>

@@ -1,0 +1,30 @@
+<apex:page Controller="Page2Controller" >
+
+    <apex:form id="integrationDetails">
+  
+    <apex:pageblock title="Integration Setup :">
+    
+        <apex:selectList value="{!selectedVal}" size="1">
+              <apex:selectOptions value="{!existingIntegrations}"/>
+              <apex:actionSupport event="onchange" rerender="mainBlock" action="{!updateSelection}"/>
+        </apex:selectList>  
+    
+        <apex:outputPanel id="mainBlock" >     
+        <apex:pageBlockSection title="IntegrationType" columns="2"> 
+            <apex:inputField value="{!ic.Name}"/>  
+            <apex:inputField value="{!ic.IntegrationAccount__c}"/>           
+            <apex:inputField value="{!ic.username__c}"/>    
+            <apex:inputField value="{!ic.password__c}"/>   
+            <apex:inputField value="{!ic.URL__c}"/>
+         </apex:pageBlockSection>    
+        </apex:outputPanel> 
+        
+         <apex:commandButton value="Submit" action="{!Move1}" />
+         <apex:commandButton value="New" action="{!Move2}"  />
+        
+    </apex:pageblock>
+  
+   
+    </apex:form>   
+
+</apex:page>

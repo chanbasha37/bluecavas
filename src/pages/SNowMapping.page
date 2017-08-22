@@ -1,0 +1,77 @@
+<apex:page controller="SNowMappingController">
+<apex:form >
+     
+     <apex:pageblock title="Map Incident fields with Case fields :">
+     <apex:panelGrid columns="4" id="abcd">
+        
+            <apex:panelGroup layout="block" style="text-align: center; padding:10px;" >
+            <apex:outputpanel layout="block" styleclass="duelingText"> <h2><b>Available Fields </b></h2></apex:outputpanel>            
+            <apex:selectList id="sel1" value="{!leftselected}" required="false" multiselect="true" style="width:250px" size="10">
+                <apex:selectOptions value="{!unselectedvalues}" />
+            </apex:selectList>
+            </apex:panelGroup>
+            
+                <apex:panelGroup layout="block" style="text-align: center; padding:30px;">
+                    <br/>
+                    <br/>
+                    <apex:outputpanel layout="block" styleclass="duelingText">Add</apex:outputpanel>
+                    <apex:image alt="Add" styleclass="rightArrowIcon"  title="Add" value="/s.gif">
+                        <apex:actionSupport event="onclick" action="{!selectclick}" reRender="abcd"/>
+                    </apex:image>
+                    <br/><br/>
+                    <apex:image alt="Remove" styleclass="leftArrowIcon" title="Remove" value="/s.gif">
+                        <apex:actionSupport event="onclick" action="{!unselectclick}" reRender="abcd"/>
+                    </apex:image>
+                    <apex:outputpanel layout="block" styleclass="duelingText">Remove</apex:outputpanel>
+                </apex:panelGroup>
+            
+            <apex:panelGroup layout="block" style="text-align: center; padding:10px;">
+            <apex:outputpanel layout="block" styleclass="duelingText"> <h2><b>Selected Fields </b></h2> </apex:outputpanel>
+            <apex:selectList id="sel2" value="{!rightselected}" required="false" multiselect="true" style="width:250px" size="10">
+                <apex:selectOptions value="{!SelectedValues}" />
+            </apex:selectList>
+            </apex:panelGroup>
+              
+               <apex:panelGroup layout="block" style="text-align: center; padding:30px;" >
+                    <br/>
+                    <br/>               
+                    <apex:outputpanel layout="block" styleclass="duelingText">Up</apex:outputpanel>
+                    <apex:image alt="Up" styleclass="upArrowIcon" title="Up" value="/s.gif">
+                       <apex:actionSupport event="onclick" action="{!MoveUp}" reRender="pnl" />
+                    </apex:image>
+                    <br/><br/>
+                    <apex:image alt="Down" styleclass="downArrowIcon" title="Down" value="/s.gif">
+                        <apex:actionSupport event="onclick" action="{!moveDown}" reRender="pnl"/>
+                    </apex:image>
+                    <apex:outputpanel layout="block" styleclass="duelingText">Down</apex:outputpanel>
+               </apex:panelGroup>
+  
+     </apex:panelGrid>
+     <apex:commandButton value="Save Mapping" action="{!Submit}" />      
+     <apex:commandButton value="Back" action="{!Back}" />        
+     </apex:pageblock>
+         
+         
+     <apex:pageblock title="After Mapping :" >
+     <apex:panelGrid columns="2" id="ab12">
+        
+               <apex:panelGroup layout="block" style="text-align: center; padding:10px;" >
+               <apex:outputpanel layout="block" styleclass="duelingText"><h2><b>IncidentFields</b></h2></apex:outputpanel>                                         
+                  <apex:repeat value="{!incidentFields}" var="key">            
+                  <apex:outputText value="{!key}"/> <br/>
+                  </apex:repeat>
+               </apex:panelGroup>
+               
+               <apex:panelGroup layout="block" style="text-align: center; padding:10px;" >
+               <apex:outputpanel layout="block" styleclass="duelingText"><h2><b>CaseFields</b></h2></apex:outputpanel>                                         
+                  <apex:repeat value="{!SelectedCaseFields}" var="key">            
+                  <apex:outputText value="{!key}"/> <br/>
+                  </apex:repeat>
+               </apex:panelGroup>                                      
+             
+     </apex:panelGrid>
+     </apex:pageblock>
+     
+
+</apex:form>
+</apex:page>

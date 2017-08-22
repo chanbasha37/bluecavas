@@ -1,0 +1,9 @@
+Dear {!Contact.FirstName},
+
+Thank you for contacting us with your inquiriy.
+
+Your reference # for this case is: {!Case.CaseNumber} The subject of your case is: "{!Case.Subject}" has been closed.
+Click on the link to access the case: {!Case.Link}.
+
+Thanks,
+{!Organization.Name}

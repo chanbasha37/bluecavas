@@ -1,0 +1,64 @@
+<apex:page sidebar="false" controller="JiraFieldsController">
+ <apex:form >
+     <div style="border:1px solid; width:200px;">
+    <div style="height:30px;width:150px;margin-top:20px;margin-left:20px;
+
+                     font-size:15px;color:blue;">
+            Field Mapping 
+         </div>
+     <table>
+         <tr>
+             <td>
+                 Issuetype
+             </td>
+             <td>
+                 <apex:inputCheckbox value="{!issuetype}"/>
+             </td>
+             </tr>
+             <tr>
+             <td>               	
+                 Priority
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!priority}"/>
+             </td>
+             </tr>
+             <tr>
+             <td>
+                 Status
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!status}"/>
+             </td>
+             </tr>
+            
+             <tr>
+             <td>
+                 Summary
+             </td>
+             <td>
+                 <apex:inputCheckbox value="{!summary}"/>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                  Updated
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!updated}"/>
+             </td>
+             </tr>
+          
+             <tr> 
+             <td colspan="2" align="center">
+                 <apex:commandButton value="INSERT" style="color:red;" action="{!doInsert}" />
+             </td>
+         </tr>
+     </table>
+     </div>
+    
+    
+    
+ </apex:form>
+
+</apex:page>

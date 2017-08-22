@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>Unauthorized</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <description>Provides Services for case management</description>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <inactiveIndexPage>InMaintenance</inactiveIndexPage>
+    <indexPage>MyProfilePage</indexPage>
+    <masterLabel>MssServices</masterLabel>
+    <portal>Partner Portal</portal>
+    <requireHttps>false</requireHttps>
+    <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
+    <siteAdmin>mnunnagopula@miraclesoft.com.cm</siteAdmin>
+    <siteRedirectMappings>
+        <action>Temporary</action>
+        <isActive>true</isActive>
+        <source>/mss-sf-developer-edition.na40.force.com/MssServices</source>
+        <target>https://na40.salesforce.com/secur/login_portal.jsp?orgId=00D46000000pF6P&amp;portalId=06046000000HCrT</target>
+    </siteRedirectMappings>
+    <siteTemplate>SiteTemplate</siteTemplate>
+    <siteType>Visualforce</siteType>
+    <subdomain>mss-sf-developer-edition</subdomain>
+    <urlPathPrefix>MssServices</urlPathPrefix>
+</CustomSite>
