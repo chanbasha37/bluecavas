@@ -1,0 +1,59 @@
+<aura:component controller="ExpenseController" implements="force:appHostable">
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<ltng:require styles="/resource/slds090/assets/styles/salesforce-lightning-design-system.min.css"/>
+<aura:attribute name="expenses" type="Expense__c[]"/>
+<aura:attribute name="newExpense" type="Expense__c" default="{'sobjectType':'Expense__c','Name':'','LightningApp__Amount__c':0,'LightningApp__Client__c':'','LightningApp__Date__c':'','LightningApp__Reimbursed__c':false}"/>
+<aura:attribute name="total" type="Double" default="0.00" />
+<aura:attribute name="exp" type="Double" default="0" />
+<div class="container">
+<form class="slds-form--stacked">
+<div class="slds-form-element slds-is-required">
+<div class="slds-form-element__control">
+<ui:inputText aura:id="expname" label="Expense Name" class="slds-input" labelClass="slds-form-element__label" value="{!v.newExpense.Name}" required="true"/>
+</div><br/>
+</div>
+<div class="slds-form-element slds-is-required">
+<div class="slds-form-element__control">
+<ui:inputNumber aura:id="amount" label="Amount" class="slds-input" labelClass="slds-form-element__label" value="{!v.newExpense.LightningApp__Amount__c}" placeholder="20.80" required="true"/></div><br/>
+</div><br/>
+<div class="slds-form-element">
+<div class="slds-form-element__control">
+<ui:inputText aura:id="client" label="Client" class="slds-input" labelClass="slds-form-element__label" value="{!v.newExpense.LightningApp__Client__c}" placeholder="ABCCo."/>
+</div><br/>
+</div><br/>
+<div class="slds-form-element">
+<div class="slds-form-element__control"><ui:inputDateTime aura:id="expdate" label="ExpenseDate" class="slds-input" labelClass="slds-form-element__label" value="{!v.newExpense.LightningApp__Date__c}" displayDatePicker="true"/>
+</div><br/>
+</div>
+	<div class="slds-form-element">
+<ui:inputCheckbox aura:id="reimbursed" label="Reimbursed?" class="slds-checkbox" labelClass="slds-form-element__label" value="{!v.newExpense.LightningApp__Reimbursed__c}"/>
+<ui:button label="Submit" class="slds-button slds-button--neutral" labelClass="label" press="{!c.createExpense}"/>
+</div><br/>
+</form>
+</div>
+<div class="container slds-p-top--medium">
+<div class="row">
+<div class="slds-tile"><br/><br/>
+
+<div class="{!v.total>=100?'slds-notifyslds-notify--toastslds-theme--errorslds-theme--alert-texture':'slds-notifyslds-notify--toastslds-theme--alert-texture'}">
+<p class="slds-tile__title slds-truncate">Total Expenses </p>
+$<ui:outputNumber class="slds-truncate" value="{!v.total}" format=".00"/>
+</div>
+</div>
+<div class= "slds-tile" >
+<div class="slds-notify slds-notify--toast slds-theme--alert-texture">
+<p class="slds-tile__title slds-truncate">No.of Expenses</p>
+<ui:outputNumber class="slds-truncate" value="{!v.exp}"/>
+</div>
+</div>
+</div>
+</div>
+<div class= "container slds-p-top--medium">
+<div id="list" class="row">
+<aura:iteration items="{!v.expenses}" var="expense">
+<p>{!expense.Name},{!expense.LightningApp__Client__c},{!expense.LightningApp__Amount__c},{!expense.LightningApp__Date__c},{!expense.LightningApp__Reimbursed__c}
+</p>
+</aura:iteration>
+</div>
+</div>
+</aura:component>

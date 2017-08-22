@@ -1,0 +1,5 @@
+<aura:component >
+    
+	<img src="{!$Resource.SLDS + '/assets/images/avatar1.jpg'}"/>
+
+</aura:component>

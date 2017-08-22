@@ -1,0 +1,55 @@
+<apex:page sidebar="false" controller="DataInsert"> 
+<apex:pageBlock >
+ <apex:form >
+     <div style="border:1px solid; width:200px;">
+    <div style="height:30px;width:300px;margin-top:20px;margin-left:20px;
+
+                     font-size:15px;color:blue;">
+            Incident Fields Mapping
+         </div>
+         
+         <apex:pageBlock title="All Selected Fields "><br/>
+         
+           <apex:repeat value="{!fields}" var="key">            
+                <apex:outputText value="{!key}"/> <br/>
+           </apex:repeat>
+
+         </apex:pageBlock> 
+    
+     </div>
+  </apex:form>
+      <apex:form >
+        <apex:actionFunction name="ObjectFileds" action="{!ObjectFields}"/>
+        
+       
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Select Object"/>
+                <apex:selectList multiselect="false" size="1" value="{!SelectedObject}" onchange="ObjectFileds();">
+                    <apex:selectOption itemLabel="--None--" itemValue="--None--"/>
+                    <apex:selectoptions value="{!supportedObject}" />
+                </apex:selectlist>
+            </apex:pageBlockSectionItem><br/><br/>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Select Field"/>
+                <apex:selectList multiselect="true" size="5" value="{!SelectedFields}">
+                    <apex:selectOption itemLabel="--None--" itemValue="--None--"/>
+                    <apex:selectoptions value="{!fieldLableAPI}" />
+                </apex:selectlist>
+            </apex:pageBlockSectionItem>                  
+        </apex:pageBlockSection>
+        
+   
+       
+         <!--table>
+         <tr >
+             <td colspan="2" align="center">
+                 <apex:commandButton value="Save Mapping" style="color:red;" action="{!}" />
+             </td>
+         </tr>
+     </table-->
+      
+    </apex:form>
+</apex:pageBlock>
+</apex:page>

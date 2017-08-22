@@ -1,0 +1,7 @@
+<apex:page standardController="Incident__c">
+  <apex:form >
+    <apex:pageBlock Title="ServiceNow Mapping">
+      <apex:outputField value="{!Incident__c.Incident_Fields__c}"/><br />
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

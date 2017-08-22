@@ -1,0 +1,80 @@
+<apex:page sidebar="false" Controller="DataInsert">
+ <apex:form >
+     <div style="border:1px solid; width:200px;">
+    <div style="height:30px;width:150px;margin-top:20px;margin-left:20px;
+
+                     font-size:15px;color:blue;">
+           Incident Field Selection 
+         </div>
+     <table>
+         <tr>
+             <td>
+                 Impact
+             </td>
+             <td>
+                 <apex:inputCheckbox value="{!impact}"/>
+             </td>
+             </tr>
+             <tr>
+             <td>
+                 Incident_state
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!incident_state}"/>
+             </td>
+             </tr>
+             <tr>
+             <td>
+                 Short_description
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!short_description}"/>
+             </td>
+             </tr>
+            
+             <tr>
+             <td>
+                 Sys_id
+             </td>
+             <td>
+                 <apex:inputCheckbox value="{!sys_id}"/>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 Contact_type
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!contact_type}"/>
+             </td>
+             </tr>
+             <tr>
+             <td>
+                 U_sftype
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!u_sftype}"/>
+             </td>
+             </tr>
+             <tr>
+             <td>
+                 sys_updated_onONLast
+             </td>
+             <td>
+                <apex:inputCheckbox value="{!sys_updated_onONLast}"/>
+             </td>
+             </tr>
+         <tr >
+             <td colspan="2" align="center">
+                 <apex:commandButton value="INSERT" style="color:red;" action="{!doInsert}" />               
+             
+             </td>
+         </tr>
+     </table>
+     </div>
+    
+    
+    
+ </apex:form>
+
+</apex:page>

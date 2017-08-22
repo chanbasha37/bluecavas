@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+
+    <div>
+        <div>
+            <c:AccountMapExample />
+        </div>
+        <div>
+            <c:AccountList />          
+        </div>
+    </div>
+
+</aura:component>

@@ -1,0 +1,37 @@
+<aura:component access="global">
+ <ui:inputText aura:id="name" label="Enter Name:" placeholder="Your Name" />
+ <ui:button aura:id="button" buttonTitle="Click to see what you put into the field" class="button" label="Click me" press="{!c.getInput}"/>
+ <ui:outputText aura:id="outName" value="" class="text"/>
+
+
+
+
+<!--form>
+<p id="login" onmouseover="showForm();" onmouseover="hideForm();">     
+    <span class="label">Login Here</span> <br/>      
+    <span id="loginForm">        
+        <span class="form-elements">
+            <span class="form-label">Name:</span><br/>
+            <span class="form-field"><input type="name" /></span>  <br/>                      </span>        
+        <span class="form-elements">
+            <span class="form-label">Password:</span><br/>
+            <span class="form-field"><input type="password" /></span>  <br/>                  </span>        
+        <span class="form-elements">
+            <span class="submit-btn"><input type="submit" value="Submit" /></span>     
+        </span>
+    
+    </span>          
+</p>
+</form-->
+
+
+
+
+
+
+
+
+
+
+
+</aura:component>

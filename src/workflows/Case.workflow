@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>PreventDuplicateInsertions</fullName>
+        <field>Prevent_Duplicates__c</field>
+        <formula>Account.Name</formula>
+        <name>PreventDuplicateInsertions</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>sample</fullName>
+        <field>Prevent_Duplicates__c</field>
+        <formula>Account.Name &amp; IntegrationTo__c  &amp; IF(SFType__c, &apos;TRUE&apos;, &apos;FALSE&apos;)</formula>
+        <name>sample</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Msg1</fullName>
+        <apiVersion>39.0</apiVersion>
+        <endpointUrl>http://http:/</endpointUrl>
+        <fields>CaseNumber</fields>
+        <fields>CaseRelatedTo__c</fields>
+        <fields>Id</fields>
+        <fields>Priority</fields>
+        <fields>Subject</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>mnunnagopula@miraclesoft.com.cm</integrationUser>
+        <name>Msg1</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Prevent Duplication</fullName>
+        <actions>
+            <name>PreventDuplicateInsertions</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Prevent_Duplicates__c</field>
+            <operation>equals</operation>
+            <value>TRUE</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>field update1</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

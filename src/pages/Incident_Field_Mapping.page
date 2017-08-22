@@ -1,0 +1,9 @@
+<apex:page standardController="Incident__c">
+   <apex:form >
+     <apex:pageBlock title="Select Incident Fields">
+        <apex:inputField value="{!Incident__c.Incident_Fields__c}"/>
+     </apex:pageBlock> 
+     <apex:pageBlock title="Incident Field Mapping">
+     </apex:pageBlock>
+  </apex:form>
+</apex:page>

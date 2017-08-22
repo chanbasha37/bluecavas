@@ -1,0 +1,21 @@
+<apex:page standardController="Incident__c">
+  <apex:form >
+     
+     <!--apex:commandButton value="Save" action="{!Save}" /-->
+     
+    <apex:pageBlock >
+      <apex:outputPanel id="Model">
+            <apex:inputField value="{!Incident__c.Incident_Fields__c}" /><br />
+        </apex:outputPanel> 
+    </apex:pageBlock>    
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        <apex:outputPanel id="table">
+        <apex:repeat value="{!Incident__c.Incident_Fields__c}" var="val">
+              <apex:outputText value="{!val}"></apex:outputText> <br></br>
+        </apex:repeat>
+        </apex:outputPanel>
+    </apex:pageBlockSection>
+    </apex:pageBlock>       
+  </apex:form>
+</apex:page>

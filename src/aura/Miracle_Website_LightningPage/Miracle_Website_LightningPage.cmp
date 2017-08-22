@@ -1,0 +1,231 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+  <!--use bootstrap css and jQUERY file in lightning component by using ltng:require component-->
+    <ltng:require styles="{! $Resource.boostrap337 + '/bootstrap-3.3.7-dist/css/bootstrap.min.css'}" 
+                  scripts="{!join(',', $Resource.jquery224 , $Resource.boostrap337 + '/bootstrap-3.3.7-dist/js/bootstrap.min.js', '/bootstrap-3.3.7-dist/js/bootstrap.js')}" afterScriptsLoaded="{!c.scriptsLoaded}"/>
+   <!--To ensure proper rendering and touch zooming using below meta tag--> 
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+   <nav class="navbar navbar-default navbar-fixed-top nvabar_custom_style_bgcolor" style ="background-color: #fff!important;border-color: #fff!important;">
+    <div class ="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand navbar_brand_no_padding">
+            <img src="http://d2b8lqy494c4mo.cloudfront.net/mss/images/miracle-logo.svg" class ="site_log_styles" />
+       &nbsp;&nbsp;&nbsp; </a> 
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div class="collapse navbar-collapse hovereffect">
+        <ul class="nav navbar-nav navbar-right nav_ul">
+            <li ><a href="#"><b>COMPANY</b></a></li>
+            <li><a href="#"><b>OUR SERVICES</b></a></li>
+            <li><a href="#"><b>LIBRARY</b></a></li>
+            <li><a href="#"><b>CAREERS</b></a></li>
+            <li><a href="#"><b>EVENTS</b></a></li>         
+            <!--li><a href="#" data-toggle="modal" data-target="#login-modal" ><img src ="https://image.freepik.com/free-icon/user-profile-icon_318-33925.jpg"  style="border-left:1px solid #ddd;  padding-left : 5px;" width="15" height="15"/></a></li-->
+           
+                   <li><a>
+                        
+                        <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown">
+                                 <img src="http://www.destination10.com/wp-content/uploads/2017/06/person.png" height="10" weight="10"/><span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#"><span class="label"></span><br/>
+                                    <b>SIGN IN</b><br/><br/>
+                                <span id="loginForm">        
+                                    <span class="form-elements">
+                                        <span class="form-label">USERNAME</span><br/>
+                                        <span class="form-field"><input type="name" style="width: 20em; height:2.5em"/></span>  <br/></span>  <br/>      
+                                    <span class="form-elements">
+                                        <span class="form-label">PASSWORD</span><br/>
+                                        <span class="form-field"><input type="password" style="width: 20em; height:2.5em"/></span>  <br/> </span> <br/><br/>       
+                                    <span class="form-elements">
+                                        <a href ="https://www.miraclesoft.com/Hubble/"><span class="submit-btn"><input type="submit" value="Submit" style="color:white;background-color: #1aa3ff; width: 20em; height:3em"/></span></a>    
+                                    </span>
+                                
+                                    </span>
+                                </a></li>
+                         </ul>
+                    </div>                       
+                </a>
+            </li>                         
+       </ul>        
+    </div>
+ </div>           
+</nav>
+<body>
+        
+   
+     <div class="section-backgnd-img">    
+        <div class="container">             
+           <h2 class="text-primary" style="color:white; padding-left:0cm;">Salesforce</h2>               
+            <h2 style="text-align:justify;font-size:15px;line-height:1.5;color: #fff; font-family: Arial; font-size:17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+            
+            </h2>
+         
+         </div>  
+     </div>
+
+         <div class="section-backgnd-img3">   
+            <div class="container">
+               <div class="col-lg-12">
+                 <h2 style="font-family:Arial; color:#003366">Miracle integration capabilities with Salesforce</h2><br/>
+                    <p> Enterprises around the world are increasingly realizing the business value offered by the    
+       cloud, particularly Software-as-a-Service (SaaS) based solutions and Platform-as-a-Service  
+      (PaaS) approach to create innovative business solutions. Miracle offers market leading SaaS   
+      products across the CRM suite.Our Saleforce.com offerings help enterprises build next-gener
+     -ation platforms for managing and enhancing their business.We leverage our strategic partner
+     -ship with Salesforce.com to help  customers realize better and more sustainable business results.</p>   
+                   <ul style="font-family:Arial">
+                             <li>Miracle provides a very rich foundation for integrating with other applications via Force.com platform.</li>
+                             <li>Miraclce also provides the two-way integration with external third-party sources like 
+                           JIRA and Service Now,....etc  End-to-end integration without using any middleware 
+                           tools support.</li>
+                             <li>Miracle also provides the solutions for complex integration like IBM-AS/400 system
+                           and amazon web services,...etc.</li>
+                             <li>Through the Connected App in salesforce  recently Miracle integrated salesforce with
+                            Ionic App/Pilot Mobile application for storing the customer  details in salesforce.</li>
+                             <li>Miracle provides various POC's related to different integration systems.</li>
+                             <li>Miracle provides the complete documentation and demo's for salesforce integration systems.</li>
+
+                       </ul>
+                 </div>                 
+             </div>
+        </div>
+ 
+        <div class="section-backgnd-img1">   
+           <div class="container">
+               <div class="col-lg-4">
+                     <img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_lightning_experience_basics.png" style="display:block;margin: 0 auto;padding-bottom: 10px;"/>
+                   <br/><br/> <p  class ="text-center"><b><h3>Lightning Experience</h3></b></p>
+               </div>
+               <div class="col-lg-4">
+                    <img src="http://www.force360.com/wp-content/uploads/2016/09/c2.sfdcstatic.comcontentdamblogsusSept2016einsteinplane-375cb1f6e5748c2016e5b5a17c3b2117bbc42200.png" style="display:block;margin: 0 auto;padding-bottom: 10px;"/>
+                   <p class ="text-center"><b><h3>Salesforce Einstein</h3></b></p> </div>
+               <div class="col-lg-4 center">
+                     <img src="https://developer.salesforce.com/resource/images/trailhead/badges/modules/trailhead_module_salesforce1_mobile_basics.png" style="display:block;margin: 0 auto;padding-bottom: 10px;"/>
+                   <br/><br/> <p class ="text-center"><b><h3>Salesforce1</h3></b></p>	              
+               </div>
+            </div>
+        </div>             
+         
+      <div class="section-backgnd-img2">
+        <div class="container">       
+           <div class="row">
+                 <div class="col-lg-6">
+                         <h2 style="font-family:Arial; color:#003366">Miracle SFDC capability highlights</h2>
+                    
+                         <ul style="font-family:Arial"><li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</li>
+                             <li>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </li>
+                             <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                         </ul>        
+                </div>
+               <div class="col-lg-6">                 
+                   <h2 style="font-family:Arial; color:#003366">Salesforce Offerings</h2>
+                     <ul><li>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</li>
+                         <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</li>
+                         <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</li>
+                         <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</li>
+                         <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</li>                 
+                     </ul>        
+            </div>            
+          </div>
+        </div>
+      </div> 
+        
+       
+         <div class="container">       
+           <div class="row">
+                 <div class="col-lg-12">
+                     <h2 style="font-family:Arial; color:#003366">Partner Community</h2>
+                     <iframe width="1150" height="480" src="https://www.youtube.com/embed/45JRuZOBIKk"></iframe>                        
+               </div>
+             </div>
+        </div>
+        
+              
+        <br/><br/>
+         <div class="section-backgnd-img5">
+            <div class="container">       
+               <div class="row">
+                   <div class="col-lg-3"><br/>                 
+                      <p style="font-family:Times new roman;font-size:18px;"><u>Recent Articles</u></p>
+                          
+                         <a href="http://www.miraclesoft.com/library/video/running-docker-containers-vmware-hosts-morpheus.php" style="color:white"><b>Running Docker Containers on VMware Hosts through Morpheus</b></a><p style="color: #737373;">Digital Experience and Commerce </p><br/>
+                         <a href="http://www.miraclesoft.com/library/video/continuous-deployment-github-to-pws-concourse.php" style="color:white"><b>Continuous Deployment from Github to PWS through Concourse</b></a><p style="color: #737373;">Digital Experience and Commerce </p><br/>
+                         <a href="http://www.miraclesoft.com/library/video/exploring-process-automation-your-sap-ecosystem-uipath.php" style="color:white"><b>Exploring Process Automation within your SAP Ecosystem with UiPath</b></a><p style="color: #737373;">Digital Experience and Commerce </p><br/>           
+                      </div>
+              <div class="col-lg-3 list"><br/>                
+                  <u><p style="font-family:Times new roman;font-size:18px;">Team Miracle</p></u>
+                    <a href="http://www.miraclesoft.com/" style="color:white;  text-decoration: none;">>   Home</a><br/>
+                    <a href="http://www.miraclesoft.com/company/" style="color:white;  text-decoration: none;">> The Company</a><br/>
+                    <a href="http://www.miraclesoft.com/partnerships/" style="color:white; text-decoration: none;">>   Partnerships</a><br/>
+                    <a href="http://www.miraclesoft.com/services/" style="color:white; text-decoration: none;">>   Our Services</a><br/>
+                    <a href="http://www.miraclesoft.com/library/" style="color:white; text-decoration: none;">>   Library</a><br/>
+                    <a href="http://www.miraclesoft.com/contact/locations.php" style="color:white; text-decoration: none;">>   Locations</a><br/>
+                    <a href="http://www.miraclesoft.com/privacy.php" style="color:white; text-decoration: none;">>   Privacy Polocy</a><br/>
+                    <a href="http://www.miraclesoft.com/gallery/" style="color:white; text-decoration: none;">>   Memory Gallery</a><br/>
+                    <a href="http://www.miraclesoft.com/contact/" style="color:white; text-decoration: none;">>   Contact Us</a><br/>
+            </div>               
+               <div class="col-lg-3">   <br/>               
+                 <p style="font-family:Times new roman;font-size:18px;"><u>Opportunities</u></p>
+                    <a href="http://www.miraclesoft.com/careers/refresh-america.php" style="color:white">Refresh America Ph : (248)-233-1100</a><br/><br/>
+                      <a href="http://www.miraclesoft.com/careers/open-positions.php" style="color:white">Multiple Positions Available - USA</a><br/><br/>
+                      <a href="http://www.miraclesoft.com/careers/itg.php" style="color:white">IT Gurukulam Ph : +91-(891)-662-3555</a><br/><br/>
+                      <a href="http://www.miraclesoft.com/careers/open-positions.php" style="color:white">Hiring 2017 Freshers - India</a><br/><br/>
+                      <a href="http://www.miraclesoft.com/careers/" style="color:white">Opportunities Ph : (248)-233-1175</a><br/>
+            </div>
+               
+                <div class="col-lg-3">  <br/>                
+                    <p style="font-family:Times new roman;font-size:18px;"><u>Corporate HQ</u></p>
+                    <p><b>Miracle Software Systems, Inc.</b></p>
+                    <p>Global Headquarters</p>
+                    <p>45625 Grand River Avenue</p>
+                    <p>Novi, MI - USA( 48374 )</p>
+                    <p>Ph: (248)-233-1100</p>
+                    <p>E : info@miraclesoft.com</p>
+                    <a href="http://www.miraclesoft.com/contact/" class="btn btn-info" role="button" style ="background-color: #337ab7; ">Get in Touch</a>
+                    <br/><br/><br/>              
+                    <img src ="http://www.corevalue.net/wp-content/uploads/2016/10/logo-2.png" align="right"	/>                  
+
+                   </div>                   
+           </div>
+        </div>
+      </div> 
+     
+          
+            <div class="section-backgnd-img4">
+               <div class="container" style="min-height: 75px;">    
+                 <div class="row">
+                  <div class="col-lg-12">
+                    <div id="footer" style="padding:25px 25px; color :white; ">
+                          © 2017 Miracle Software Systems, Inc.
+                        
+                        <ul  style="list-style-type: none; position:relative;  position:absolute;bottom:0;right:0; margin: 0;padding: 0; overflow: hidden; ">
+                            <li style=" display: inline;"><a href="https://www.facebook.com/miracle45625"><img width="42" height="42"  src ="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" /></a></li>
+                            <li style=" display: inline;"><a href="https://plus.google.com/+Team_MSS"><img width="35" height="35"  src ="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-google-plus-128.png"/></a></li>
+                            <li style=" display: inline;"><a href="https://twitter.com/Team_MSS"><img width="42" height="42"  src ="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-128.png" /></a></li>
+                            <li style=" display: inline;"><a href="https://www.linkedin.com/company/miracle-software-systems-inc"><img width="38" height="38"  src ="https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/135/Social_Media_Socialmedia_network_share_socialnetwork_network-05-128.png" /></a></li>
+                            <li style=" display: inline;"><a href="https://www.youtube.com/c/Team_MSS"><img width="35" height="35"  src ="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/youtube_circle-128.png" /></a></li>
+                            <li style=" display: inline;"><a href="#"></a></li>
+                            <li style=" display: inline;margin-top:5px; margin-left:30px; margin-right: 30px;  "><a href="#"><img width="20" height="20" src ="https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png"/></a></li>
+                            
+                            <!--button align="right" onclick="" id="myBtn" title="Go to top" style="background-color: Black;" >^</button-->
+                         <!--lightning:button label="^"  title="Go to top" onclick="{!c.scrollFunction}"/-->
+
+                        </ul>                          
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>       
+    </body>
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:component >
+    <c:helloHeading />
+	<p>Lightning First App Example for testing</p>
+</aura:component>

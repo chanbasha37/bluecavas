@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Order</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Analysis</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>ShippingAddress</fieldNames>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>OriginalOrderId</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

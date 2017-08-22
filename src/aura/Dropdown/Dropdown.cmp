@@ -1,0 +1,15 @@
+<aura:component >
+<ltng:require styles="/resource/bootstrap" scripts='/resource/jquery,/resource/bootstrapjs' afterScriptsLoaded="{!c.jsLoaded}" />
+<div class='mynamespace'>
+	<div class="dropdown">
+		<div id="dLabel" type="button" class='btn btn-success' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Some Menu
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			<li role="presentation"><a role="menuitem" href="">Action</a></li>
+			<li role="presentation"><a role="menuitem" href="">Another action</a></li>
+		</ul>
+	</div>
+</div>
+</aura:component>

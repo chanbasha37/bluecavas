@@ -1,0 +1,19 @@
+<apex:page controller="prodSearchController">
+        <apex:outputPanel id="selectPub">
+        <apex:pageBlock rendered="{!renderSelectPub}"  title="Please select a publication" id="selectPub2">
+        <apex:form >    
+        <apex:selectRadio layout="pageDirection"  value="{!pub}">    
+        <apex:selectOptions value="{!DistinctPubs}"/>         
+        <apex:actionSupport event="onchange" action="{!selectPub}" rerender="selectPub,selectRateCard"/>    
+        </apex:selectRadio>  
+        </apex:form>    
+        </apex:pageBlock>         
+      </apex:outputPanel> 
+      <apex:outputPanel id="selectRateCard">
+      <apex:pageBlock rendered="{!renderSelectCard}" title="Please select a rate card" id="selectRateCard2">  
+      <apex:outputPanel >         
+      <apex:outputText value="{!pub}"/>    
+      </apex:outputPanel>  
+      </apex:pageBlock>
+      </apex:outputPanel>
+</apex:page>

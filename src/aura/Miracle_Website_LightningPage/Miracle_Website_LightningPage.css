@@ -1,0 +1,153 @@
+.THIS .site_log_styles{
+    
+    width:170px;height:60px;
+    border-right:1px solid #ddd; 
+    padding-right : 15px;
+    position-left: 2px;
+    left:10px;
+    
+}
+
+.THIS .navbar_brand_no_padding{
+    
+    padding :0px 15px;
+}
+
+
+
+
+
+
+.THIS .section-backgnd-img{
+    padding :70px 0px;
+    background-image: url('http://www.newsbase.co.jp/files/1014/9847/4618/35_%282%29.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    font-size:17px;
+ }
+
+.THIS .section-backgnd-img1{
+    
+    padding :50px 0px;
+    background-image: url('http://inthenimbus.com/winterparkbanner2.jpg');
+    background-repeat: no-repeat;
+    background-size: 5000px !important;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+            
+}
+
+.THIS .section-backgnd-img2{
+    
+     font-size:17px; 
+    
+}
+
+.THIS .section-backgnd-img3{
+    
+    padding :50px 0px;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 5000px !important;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    font-size:17px;    
+}
+
+
+.THIS .section-backgnd-img4{
+    
+    padding :5px 0px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS102l69YxQKA910Cq4E7q64RovizW6IpLYBVGHCacOk_Fm5JRT');
+    background-repeat: no-repeat;
+    background-size: 5000px !important;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    
+}
+
+.THIS .section-backgnd-img5{
+    color : white;
+    padding :5px 0px;
+    background-image: url('http://highlanderholsters.com/wp-content/uploads/2015/06/Dark-Grey.jpg');
+    background-repeat: no-repeat;
+    background-size: 5000px !important;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    font-size:14px;
+}
+
+.THIS .hovereffect:hover{
+    
+    color:skyblue;
+}
+
+
+
+
+
+
+
+.THIS .section-backgnd-img3{
+    
+    padding :5px 0px;
+    background-image: url('https://silversoftworks.com/wp-content/uploads/2017/04/salesforce-support.png');
+    background-repeat: no-repeat;
+    background-size: 5000px !important;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.THIS .col-lg-4>P{
+    
+    color :white;    
+}
+
+.THIS .li>link:hover{
+    color:red;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.THIS .section-backgnd-img7{
+    padding :5px 0px;
+    background-image: url('http://highlanderholsters.com/wp-content/uploads/2015/06/Dark-Grey.jpg');
+    background-repeat: no-repeat;
+    background-size: 5000px !important;
+    position: relative;
+    background-attachment: fixed;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+
+    
+    
+}
+
+.THIS .loginForm  {
+    display: none;
+    background: #ccc;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    color: #333;
+}

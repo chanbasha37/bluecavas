@@ -1,0 +1,6 @@
+<aura:component >
+    <c:helloHeadding />
+	<p>Hi This is the first lightning Application!</p>
+    <c:helloMessage message="You look nice today."/>
+    <c:helloPlayground />
+</aura:component>

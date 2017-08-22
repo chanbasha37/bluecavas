@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<p>This is My First page in Lightning</p>
+    
+    <aura:attribute name="greeting" type="String" default="World" />
+
+   
+    <lightning:input name="Greeting" label="Greeting" value="{!v.greeting}"/>
+
+     Hello, {!v.greeting}!
+    
+    
+
+</aura:component>

@@ -1,0 +1,20 @@
+<apex:page Controller="Page1Controller" >
+ <apex:form >
+  <apex:pageblock title="Integration">
+   <apex:outputLabel > Integration Setup : </apex:outputLabel>
+    <apex:selectList size="1">
+       <apex:selectOptions value="{!ic.Name}"></apex:selectOptions>
+    </apex:selectList>    
+    <apex:pageBlockSection title="IntegrationType" columns="2"> 
+          <apex:inputField value="{!ic.Name}"/>  
+          <apex:inputField value="{!ic.IntegrationAccount__c}"/>           
+          <apex:inputField value="{!ic.username__c}"/>    
+          <apex:inputField value="{!ic.password__c}"/>   
+          <apex:inputField value="{!ic.URL__c}"/>
+          <apex:inputField value="{!ic.integrationType__c}"/>
+          <apex:inputField value="{!ic.In__c}"/>
+    </apex:pageBlockSection>       
+   <apex:commandButton value="submit" action="{!Save}" />    
+  </apex:pageblock>
+ </apex:form>          
+</apex:page>
