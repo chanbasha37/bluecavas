@@ -9,18 +9,18 @@ public class TestLightningConnectQuickstart {
         
         LightningConnectQuickstart qs = new LightningConnectQuickstart();
         
-        Boolean state = qs.getCustomerIDsSet();
+        Boolean state1 = qs.getCustomerIDsSet();
         
-        System.assertEquals(false, state, 'IDs should not be set');
+        System.assertEquals(false, state1, 'IDs should not be set');
         
         qs.setCustomerIDs();
 
-        state = qs.getCustomerIDsSet();
+        state1 = qs.getCustomerIDsSet();
         
-        System.assertEquals(true, state, 'IDs should be set');
+        System.assertEquals(true, state1, 'IDs should be set');
 
-		// Double check!
-		accs = [SELECT Id 
+        // Double check!
+        accs = [SELECT Id 
                 FROM Account 
                 WHERE Customer_Id__c = null];
         
