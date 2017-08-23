@@ -7,7 +7,7 @@ global class wwwApprouterComConnectorsWsdlServive {
        private String[] field_order_type_info = new String[]{'id'};
     }
     global class Provide_ServicePort {
-        
+        //sample class for git hub
         public String endpoint_x = 'https://provide.castiron.ibmcloud.com/env/Production/sapdata?username=skbasha467@gmail.com&password=7842543784C';
         public Map<String,String> inputHttpHeaders_x;
         public Map<String,String> outputHttpHeaders_x;
