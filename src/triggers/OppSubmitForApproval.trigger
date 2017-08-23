@@ -15,7 +15,7 @@ trigger OppSubmitForApproval on Opportunity (after update) {
              if(Approval.isLocked(opp.Id)){
         
              Approval.unlock(opp.Id);
-            
+            //sampletest example for git repo
           }                 
            
         }
