@@ -19,6 +19,7 @@ public class Vision {
         string contentType = HttpFormBuilder.GetContentType();
         //  Compose the form
         string form64 = '';
+		string form641 = '';
 
         form64 += HttpFormBuilder.WriteBoundary();
         form64 += HttpFormBuilder.WriteBodyParameter('modelId', EncodingUtil.urlEncode(model, 'UTF-8'));
