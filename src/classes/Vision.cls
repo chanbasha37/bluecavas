@@ -10,7 +10,7 @@ public class Vision {
     public static List<Prediction> predictBase64(String base64String, String access_token, String model) {
         return predictInternal(base64String, access_token, model, true);
     }
-
+          //sampletest example for git repository
     public static List<Prediction> predictBlob(blob fileBlob, String access_token, String model) {
         return predictInternal(EncodingUtil.base64Encode(fileBlob), access_token, model, true);
     }
@@ -27,14 +27,15 @@ public class Vision {
          form64 += HttpFormBuilder.WriteBodyParameter('sampleBase64Content', sample);
         } else {
          form64 += HttpFormBuilder.WriteBodyParameter('sampleLocation', sample);
-        }
+         //just for false condition checking
+	    }
         form64 += HttpFormBuilder.WriteBoundary(HttpFormBuilder.EndingType.CrLf);
 
         blob formBlob = EncodingUtil.base64Decode(form64);
         string contentLength = string.valueOf(formBlob.size());
         //  Compose the http request
         HttpRequest httpRequest = new HttpRequest();
-
+		
         httpRequest.setBodyAsBlob(formBlob);
         httpRequest.setHeader('Connection', 'keep-alive');
         httpRequest.setHeader('Content-Length', contentLength);
@@ -78,7 +79,9 @@ public class Vision {
     }
 
     public class Prediction {
+
         public String label {get;set;}
         public Double probability {get;set;}
+
     }
 }
